@@ -23,6 +23,26 @@ namespace UpDesktop
         public MainWindow()
         {
             InitializeComponent();
+            OpenPage(pages.auth);
+        }
+
+        public enum pages
+        {
+            auth,
+            requests,
+            changingReq,
+            workerReq,
+            histories,
+            userAddReq,
+            otchet,
+            managerPage,
+            statistics
+        }
+
+        public void OpenPage(pages page, int? userId = null)
+        {
+            if (page == pages.requests)
+                frame.Navigate(new Pages.RequestPage.Request(this));
         }
     }
 }

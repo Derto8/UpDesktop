@@ -8,7 +8,16 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Request">
 
-    <Grid>
-        
+    <Grid Background="Gray">
+        <Label Content="Заявки" Foreground="White" FontSize="26" Height="53" VerticalAlignment="Top" HorizontalAlignment="Left" Width="149" Margin="36,10,0,0"/>
+
+        <DataGrid x:Name="dtRequests" Margin="36,74,249,54"/>
+        <Button Margin="190,15,0,0" Click="GoEdit" Height="42" VerticalAlignment="Top" Content="Редактировать" Background="White" FontSize="16" HorizontalAlignment="Left" Width="152" />
+        <Button Margin="638,16,10,0" Click="Exit" Height="42" VerticalAlignment="Top" Content="Выйти" Background="White" FontSize="16" />
+        <TextBox x:Name="tbSearch" Text="Поиск" FontSize="16" Margin="0,74,10,0" Height="38" VerticalAlignment="Top" HorizontalAlignment="Right" Width="198"/>
+        <Button Margin="0,135,33,0" Click="NumberSearch" Height="42" VerticalAlignment="Top" Content="По номеру" Background="White" FontSize="16" HorizontalAlignment="Right" Width="152" />
+        <Button Margin="0,197,33,0" Click="EquipmentSearch" Height="42" VerticalAlignment="Top" Content="По оборудованию" Background="White" FontSize="16" HorizontalAlignment="Right" Width="152" />
+        <Button Margin="0,259,33,0" Click="StateSearch" Height="42" VerticalAlignment="Top" Content="По статусу" Background="White" FontSize="16" HorizontalAlignment="Right" Width="152" />
+
     </Grid>
 </Page>
