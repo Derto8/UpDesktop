@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -85,7 +86,7 @@ namespace UpDesktop.Pages.RequestPage
                     {
                         if (tbTime.Text != "")
                         {
-                            var ttime = Time.TryParse(tbTime.Text, out TimeOnly time) ? time : TimeOnly.MinValue;
+                            var ttime = TimeOnly.TryParse(tbTime.Text, out TimeOnly time) ? time : TimeOnly.MinValue;
                             if (time == TimeOnly.MinValue)
                             {
                                 MessageBox.Show("Введите правильно затраченное время!");
