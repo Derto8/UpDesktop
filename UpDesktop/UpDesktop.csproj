@@ -10,4 +10,8 @@
     <ProjectReference Include="..\UpDesktop.Core\UpDesktop.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+
 </Project>
