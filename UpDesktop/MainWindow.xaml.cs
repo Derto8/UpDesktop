@@ -41,8 +41,24 @@ namespace UpDesktop
 
         public void OpenPage(pages page, int? userId = null)
         {
+            if (page == pages.auth)
+                frame.Navigate(new Pages.Authorization(this));
             if (page == pages.requests)
                 frame.Navigate(new Pages.RequestPage.Request(this));
+            if (page == pages.changingReq)
+                frame.Navigate(new Pages.RequestPage.RequestsChanging(this));
+            if (page == pages.workerReq)
+                frame.Navigate(new Pages.RequestPage.WorkerRequest(this));
+            if (page == pages.histories)
+                frame.Navigate(new Pages.HistoriesPage(this));
+            if (page == pages.userAddReq)
+                frame.Navigate(new Pages.RequestPage.AddRequest(this, userId));
+            if (page == pages.otchet)
+                frame.Navigate(new Pages.Otchet(this));
+            if (page == pages.managerPage)
+                frame.Navigate(new Pages.ManagerPage(this));
+            if (page == pages.statistics)
+                frame.Navigate(new Pages.Statistic(this));
         }
     }
 }
