@@ -25,7 +25,7 @@
         <Button Margin="571,175,0,0" Click="ChangeTime" Height="44" VerticalAlignment="Top" Content="Изменить время заявки" Background="White" FontSize="16" HorizontalAlignment="Left" Width="206" />
         <Image Margin="586,234,0,0" HorizontalAlignment="Left" Width="176" Height="176" VerticalAlignment="Top">
             <Image.Source>
-                <FormatConvertedBitmap Source="C:\Users\Николай\source\repos\UPDesckop\UPDesckop\Images\qranswers.jpg"/>
+                <FormatConvertedBitmap Source="C:\Users\Николай\source\repos\UpDesktop\UpDesktop\Images\qranswers.jpg"/>
             </Image.Source>
         </Image>
     </Grid>
